@@ -57,3 +57,14 @@ print(f"VOC PASCAL mAP in all points: {metric_fn.value(iou_thresholds=0.5)['mAP'
 # compute metric COCO metric
 print(f"COCO mAP: {metric_fn.value(iou_thresholds=np.arange(0.5, 1.0, 0.05), recall_thresholds=np.arange(0., 1.01, 0.01))['mAP']}")
 ```
+###Citation
+If you find this library useful for your research, please consider citing:
+```
+@Misc{bes_mAP_python,
+  title        = {mAP: Mean Average Precision for Object Detection},
+  howpublished = {\href{https://github.com/bes-dev/mean_average_precision}{https://github.com/bes-dev/mean_average_precision}},
+  year         = {2020},
+  url          = {https://github.com/bes-dev/mean_average_precision},
+}
+```
+
